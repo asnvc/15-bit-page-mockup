@@ -2,6 +2,10 @@ html{
     scroll-behavior: smooth;
 }
 
+:root{
+    background-color: #EBEEF5;
+}
+
 body,
 body * {
     margin:0;
