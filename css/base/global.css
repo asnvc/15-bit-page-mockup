@@ -7,13 +7,11 @@ html{
 }
 
 body,
-body * {
+body {
+    display: flex;
     margin:0;
     padding: 0;
     vertical-align: top;
     box-sizing: border-box;
-}
-
-body{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat, sans-serif';
 }
