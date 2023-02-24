@@ -4,7 +4,6 @@
     background-color: #F7F6FF;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100px;
     height: 100vh;
     left: 0;
@@ -24,8 +23,21 @@
     transition: 1s all;
 }
 
+.sidebar:hover .hidden {
+    opacity: 1;
+}
+.sidebar:hover .shown {
+    color: #02577A;
+}
+
 .logo {
     padding: 52px 16px 24px 16px;
+}
+
+.sidebar:hover .logo {
+    padding: 52px 29px 24px 29px;
+    margin: 0px 39px 0px 39px;
+    transition: 1s;
 }
 
 .logo-line {
@@ -44,7 +56,7 @@
 .home {
     display: grid;
     grid-template-columns: 25px auto;
-    padding: 16px 32px;
+    padding: 16px 54px;
     margin-left: 11px;
     gap: 19px;
     background-color: #FFFFFF;
@@ -53,8 +65,19 @@
     margin-top: 32px;
 }
 
-.house {
+.side {
+    display: grid;
+    grid-template-columns: 25px auto;
+    padding: 16px 32px;
+    margin-left: 11px;
+    gap: 20px;
+}
+
+.icon {
     justify-self: center;
+}
+.joystick {
+    padding-left: 11.5px
 }
 
 
@@ -63,19 +86,8 @@
     opacity: 0;
     overflow: hidden;
     color: #C4C4C4;
-    align-self: center;
-}
 
-.sidebar:hover .hidden {
-    opacity: 1;
 }
-.sidebar:hover .shown {
-    color: #02577A;
-}
-.joystick {
-    transform: translateX(-15%);
-}
-
 
 /* main */
 
@@ -95,7 +107,7 @@ footer{
     width: 184px;
 }
 
-footer > div > p::before{
+footer > div > .paragraph::before{
     content: '';
     display: block;
     margin-bottom: 100px;
